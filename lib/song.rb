@@ -17,6 +17,10 @@ class Song
     @@genres.uniq
   end
   
+  def self.genres_count
+    @@genres_count
+  end
+  
   
   def initialize (name,artist,genre)
     @name = name
