@@ -8,7 +8,7 @@ class Song
     @artist = artist
     @genre = genre
     @@count += 1
-    @@artists.push(artist) unless @@artists.include?(artist)
+    @@artists.push(artist) unless @@artists.include?(artist) # using unless to make sure we don't have duplicate artists
     #@@artists << artist
   end
   
