@@ -9,7 +9,7 @@ class Song
   end
   
   def self.artists
-    
+    @@artists.unique
   end
   
   def initialize (name,artist,genre)
