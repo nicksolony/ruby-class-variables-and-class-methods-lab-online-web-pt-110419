@@ -12,6 +12,10 @@ class Song
     @@artists.uniq
   end
   
+  def self.genres
+    @@genres.uniq
+  end
+  
   def initialize (name,artist,genre)
     @name = name
     @artist = artist
