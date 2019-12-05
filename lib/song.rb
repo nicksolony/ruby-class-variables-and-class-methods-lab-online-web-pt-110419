@@ -26,7 +26,8 @@ class Song
     #@@artists.push(artist) unless @@artists.include?(artist) # using unless to make sure we don't have duplicate artists
     @@artists << artist
     @@genres << genre
-    if @@genres_count.key
+    @@genres_count.key?(genre) @@genres_count
+    end
   end
   
   def name 
