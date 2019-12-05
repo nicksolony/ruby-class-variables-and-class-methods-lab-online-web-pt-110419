@@ -26,6 +26,7 @@ class Song
     #@@artists.push(artist) unless @@artists.include?(artist) # using unless to make sure we don't have duplicate artists
     @@artists << artist
     @@genres << genre
+    
   end
   
   def name 
