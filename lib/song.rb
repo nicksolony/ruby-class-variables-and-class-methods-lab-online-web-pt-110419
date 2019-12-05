@@ -10,4 +10,13 @@ class Song
     @name
   end
   
+  def artist
+    @artist
+  end
+  
+  def genre
+    @genre
+  end
+  
+  
 end
