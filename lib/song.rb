@@ -8,7 +8,8 @@ class Song
     @artist = artist
     @genre = genre
     @@count += 1
-    @@artists << artist
+    @@artists.push(artist) unless @@artists.include?(artist)
+    #@@artists << artist
   end
   
   def name
