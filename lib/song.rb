@@ -29,7 +29,7 @@ class Song
     if @@genres_count.key?(genre)
       @@genres_count[genre] += 1
     else
-      @@genres_count
+      @@genres_count[genre] = 1
     end
   end
   
