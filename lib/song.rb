@@ -42,6 +42,14 @@ class Song
       @@genre_count[genre] = 1            #otherwise add new genre key pair to the hash 
     end
     
+      if @@artist_count.key?(artist)          #check if artist key exist in artist_count hash
+      @@artist_count[artist] += 1           #in case it does, update current artist_count
+    else
+      @@artist_count[artist] = 1            #otherwise add new artist key pair to the hash 
+    end
+    
+    
+    
   end
   
   def name 
