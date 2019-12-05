@@ -39,7 +39,7 @@ class Song
     if @@genre_count.key?(genre)          #check if genre key exist in genre_count hash
       @@genre_count[genre] += 1           #in case it does, update current genre_count
     else
-      @@genre_count[genre] = 1            #otherwise add new genre key to the hash with a count of 1
+      @@genre_count[genre] = 1            #otherwise add new genre key pair to the hash 
     end
     
   end
